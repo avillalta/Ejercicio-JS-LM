@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Notas</title>
+</head>
+<body>
+    <header>
+        <div class="header-info-container">
+            <img class="nav-img" src="./src/images/Cesur FP 🧑‍ Si te gusta_id9TPfotx0_3.svg" alt="">
+            <h1 class="nav-title">Calificaciones</h1>
+        </div>   
+    </header>
+    <main>
+        <section class="form">
+            <div class="form-container">
+                <div class="form-title">
+                    <figure>''</figure>
+                    <legend>Datos del Alumno</legend>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del alumno" required>
+                    <input type="number" id="ejercicios" name="ejercicios" min="0" max="10" placeholder="Nota de ejercicios" required>
+                    <input type="number" id="teorico" name="teorico" min="0" max="10" placeholder="Nota del exámen teórico" required>
+                    <input type="number" id="practico" name="practico" min="0" max="10" placeholder="Nota del exámen práctico" required>
+                    <input type="number" id="proyecto" name="proyecto" min="0" max="10" placeholder="Nota del proyecto" required>
+                </div> 
+                <div class="btn-container">
+                    <button class="btn" id="calc">Calcular</button>
+                    <button class="btn" id="reset">Borrar</button>
+                </div>
+            </div>
+            <div class="result-container">
+                <h2 id="result-info"></h2>
+                <div class="nota-container">
+                    <p>NOTA</p>
+                    <span id="nota">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
